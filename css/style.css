@@ -1,0 +1,765 @@
+@import url('https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&family=Fjord+One&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Fjord One", serif;
+
+    display: grid;
+    min-height: 100%;
+    gap: 0;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 95% 20vh;
+}
+
+
+/* Typo */
+h1, h2, a{
+    font-family: "Coustard", serif;
+    font-weight: 500;
+    color: #242423;
+}
+
+h3, h4{
+    font-family: "Neuton", serif;
+    color: #242423;
+}
+
+
+/* Boutons */
+section a{
+    padding: 0.5rem 1rem;
+    background-color: #F5CB5C;
+    border-radius: 10px;
+    width: 20%;
+
+    text-align: center;
+    text-decoration: none;
+    color: #242423;
+    transition: 0.3s;
+
+    border: solid transparent 1px;
+}
+
+section a:hover{
+    border: solid 1px #242423;
+    background-color: white;
+}
+
+
+/* Commandes supplémentaires */
+section{
+    min-height: 80vh;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+/* Page Accueil *//* Page Accueil *//* Page Accueil */
+/* Page Accueil *//* Page Accueil *//* Page Accueil */
+/* Page Accueil *//* Page Accueil *//* Page Accueil */
+/* Page Accueil *//* Page Accueil *//* Page Accueil */
+/* Page Accueil *//* Page Accueil *//* Page Accueil */
+/* Page Accueil *//* Page Accueil *//* Page Accueil */
+
+/* HEADER */
+/* HEADER */
+/* HEADER */
+
+header{
+    background-color: #F5CB5C;
+    grid-column: 1;
+    grid-row: 1/2;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+
+
+/* Navbar */
+header nav{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    align-items: center;
+}
+
+/* Boutons */
+header nav a{
+    color: #242423;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+}
+
+/* Hover */
+header nav a:hover{
+    transform: scale(1.125);
+}
+
+/* Couleur Section Active */
+.actif{
+    background-color: #24242317;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+
+
+
+/* Main */
+/* Main */
+/* Main */
+main{
+    grid-column: 1;
+    grid-row: 2/3;
+
+}
+
+
+
+
+/* Section Intro */
+/* Section Intro */
+/* Section Intro */
+.section-intro{  
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Container Intro */
+.section-intro .container{
+    width: 40%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* H1 */
+.section-intro .container h1{
+    width: 48%;
+    margin-bottom: 10px;
+}
+
+/* Bouton */
+.section-intro .container a{
+    margin-top: 30px;
+}
+
+/* Image */
+.section-intro img{
+    width: 50%;
+    position: absolute;
+    z-index: 1;
+    right: 200px;
+}
+
+.section-intro figure{
+    background-color: #dda610;
+    width: 400px;
+    height: 450px;
+    position: relative;
+}
+
+
+
+
+/* Section Burgers */
+.section-burgers{
+    align-content: center;
+    background-color: #E8EDDF;
+    min-height: 100vh;
+    padding: 5rem 0;
+}
+
+
+/* Image */
+.section-burgers .container img{
+    width: 80%;
+    transition: 0.3s;
+}
+
+.section-burgers .container img:hover{
+    transform: scale(1.125);
+}
+
+
+/* Container - Alignement */
+.section-burgers .align{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.section-burgers .align .container{
+    width: 25%;
+    background-color: #33353309;
+    border-radius: 10%;
+    padding: 2rem;
+}
+
+/* H1 */
+.section-burgers h1{
+    margin-bottom: 50px;
+}
+
+
+/* Bouton */
+.section-burgers a{
+    display: flex;
+    justify-content: center;
+    width: 10%; 
+    margin: 0 auto;
+}
+
+.section-burgers a:hover{
+    background-color: #E8EDDF;
+}
+
+/* Section Histoire */
+/* Section Histoire */
+/* Section Histoire */
+/* Section Histoire */
+.section-histoire{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 85%;
+    min-height: 70vh;
+}
+
+.section-histoire div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 220px;
+}
+
+/* Image */
+.section-histoire img{
+    width:700px;
+    height: 400px;
+}
+
+/* Paragraphe */
+.section-histoire p{
+    width: 80%;
+}
+
+
+
+/* Section Mobile */
+/* Section Mobile */
+/* Section Mobile */
+.section-mobile-recrutement{
+    background-image: url(../img/253215.jpg);
+    background-size: cover;
+    min-height: 40vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Container textuel */
+.section-mobile-recrutement .container{
+    width: 70%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    
+    grid-column: 1/2;
+}
+
+.section-mobile-recrutement .container div{
+    margin-bottom: 20px;
+}
+
+
+
+/* Section Localisation */
+/* Section Localisation */
+/* Section Localisation */
+.section-localisation{
+    padding: 5rem 0 0;
+}
+
+/* H1 */
+.section-localisation h1{
+    margin-bottom: 40px;
+}
+
+/* Google Map & Button */
+.section-localisation .map-container, .section-localisation div#map-display{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Position Google Map */
+.section-localisation iframe{
+    width: 90%;
+}
+
+/* Button Custom */
+.section-localisation button{
+    padding: 0.5rem 1rem;
+    margin: 2rem 2rem 0;
+    background-color: transparent;
+    border: solid 2px #F5CB5C;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: "Coustard", serif;
+}
+
+.section-localisation button:hover{
+    background-color: #F5CB5C;
+}
+
+
+
+/* Footer */
+/* Footer */
+/* Footer */
+footer{
+    grid-column: 1;
+    grid-row: 3/4;
+
+    background-color: #333533;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #E8EDDF;
+    padding: 0 2rem;
+}
+
+
+/* Navbar */
+footer nav a{
+    color: #E8EDDF;
+    text-decoration: none;
+    flex-direction: column;
+    display: flex;
+    transition: 0.3s;
+}
+
+footer nav a:hover{
+    color: #F5CB5C;
+}
+
+footer nav{
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/2;
+
+    flex-direction: column;
+}
+
+footer nav{
+    grid-column: 2/3;
+}
+
+/* Logo / Copyright */
+footer .container-centre img{
+    width: 15%;
+}
+
+footer .container-centre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Newsletter / réseaux */
+footer .container-droite{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 80%;
+}
+
+footer .container-droite h2{
+    color: #E8EDDF;
+}
+
+
+/* Newsletter */
+footer .container-droite .newsletter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    align-content: center;
+    margin-bottom: 10px;
+}
+
+footer .container-droite .newsletter input{
+    padding: 0.5rem 2rem 0.5rem 5px;
+}
+
+footer .container-droite .newsletter input.btn{
+    padding: 0.5rem 1rem;
+    transition: 0.5s;
+}
+
+footer .container-droite .newsletter input.btn:hover{
+    background-color: #F5CB5C;
+}
+
+/* Réseaux */
+footer .container-droite .réseaux i{
+    font-size: 30px;
+    transition: 0.3s;
+    align-items: center;
+}
+
+footer .container-droite .réseaux i:hover{
+    color: #F5CB5C;
+}
+
+footer .container-droite .réseaux div{
+    justify-content: space-between;
+    display: flex;
+    width: 40%;
+    margin-top: 10px;
+}
+
+
+/* Page service *//* Page service *//* Page service */
+/* Page service *//* Page service *//* Page service */
+/* Page service *//* Page service *//* Page service */
+/* Page service *//* Page service *//* Page service */
+/* Page service *//* Page service *//* Page service */
+
+/* Section Intro */
+.intro-service{
+    background-image: url(../img/ZaAMNAwZ-burger-king-2-pro-18jpg56021647cropped.jpg);
+    background-size: cover;
+    min-height: 60vh;
+    display: grid;
+    grid-template-columns: 40% 30%;
+}
+
+.intro-service .container{
+    grid-column: 1/2;
+    width: 90%;
+}
+
+.intro-service .container h1, .intro-service .container p{
+    color: #E8EDDF;
+}
+
+
+/* Section Services */
+.section-services img{
+    width: 500px;
+    height: 300px;
+}
+
+
+/* GRID */
+.section-services{
+    display: grid;
+    grid-template-rows: 45vh 45vh 45vh 0.1fr 0.1fr;
+    padding: 5rem 0;
+}
+
+.section-services .regroup-1{
+    grid-row: 1/2;
+}
+
+.section-services .regroup-2{
+    grid-row: 2/3;
+    
+}
+
+.section-services .regroup-3{
+    grid-row: 3/4;
+
+}
+
+
+
+.section-services .regroup-1, .section-services .regroup-3{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.section-services .regroup-2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    text-align: end;
+}
+
+.section-services .regroup-1 div, .section-services .regroup-3 div, .section-services .regroup-2 div{
+    width: 40%;
+}
+
+.section-services .btn{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+    align-items: center;
+    height: 80px;
+}
+
+
+/* Page Réalisations *//* Page Réalisations *//* Page Réalisations */
+/* Page Réalisations *//* Page Réalisations *//* Page Réalisations */
+/* Page Réalisations *//* Page Réalisations *//* Page Réalisations */
+/* Page Réalisations *//* Page Réalisations *//* Page Réalisations */
+/* Page Réalisations *//* Page Réalisations *//* Page Réalisations */
+
+/* Section réalisations */
+.section-réalisation{
+    align-content: center;
+    min-height: 100vh;
+    padding: 5rem 0;
+}
+
+
+/* Image */
+.section-réalisation .container img{
+    width: 80%;
+    transition: 0.3s;
+}
+
+.section-réalisation .container img:hover{
+    transform: scale(1.125);
+}
+
+
+/* Container - Alignement */
+.section-réalisation .align{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.section-réalisation .align .container{
+    width: 22%;
+    background-color: #33353309;
+    border-radius: 10%;
+    padding: 2rem;
+}
+
+/* H2 */
+.section-réalisation h2{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Navbar */
+.section-réalisation nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 25%;
+    margin-bottom: 50px;
+}
+
+.section-réalisation nav a{
+    background-color: transparent;
+}
+
+/* Espacement */
+.section-réalisation .bottom-space{
+    margin-bottom: 20vh;
+}
+
+/* Image Poisson */
+.section-réalisation .fish img{
+    width: 100%;
+}
+
+
+
+/* Page à propos *//* Page à propos *//* Page à propos */
+/* Page à propos *//* Page à propos *//* Page à propos */
+/* Page à propos *//* Page à propos *//* Page à propos */
+/* Page à propos *//* Page à propos *//* Page à propos */
+
+/* section About */
+.section-about{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    min-height: 70vh;
+    align-items: center;
+}
+
+/* Image */
+.section-about img{
+    width: 700px;
+    height: 450px;
+    position: relative;
+}
+
+/* Taille textuel */
+.section-about div{
+    width: 50%;
+}
+
+/* Fond jaune */
+.section-about figure{
+    position: absolute;
+    width: 700px;
+    height: 450px;
+    background-color: #dda610;
+    right: 50px;
+    top: 150px;
+}
+
+
+/* Section Textuel */
+.section-textuel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+    padding: 4rem 0;
+    background-color: #242423;
+}
+
+.section-textuel div{
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Couleur texte */
+.section-textuel p, .section-textuel h2{
+    color: #E8EDDF;
+}
+
+/* Bouton */
+.section-textuel .btn{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    margin-top: 30px;
+    color: #E8EDDF;
+}
+
+.section-textuel .btn a:hover{
+    background-color: #242423;
+    color: #F5CB5C;
+    border: solid 1px #F5CB5C;
+}
+
+/* Margin H2 */
+.section-textuel .btn h2{
+    margin-bottom: 20px;
+}
+
+
+
+/* Page Contact *//* Page Contact *//* Page Contact */
+/* Page Contact *//* Page Contact *//* Page Contact */
+/* Page Contact *//* Page Contact *//* Page Contact */
+/* Page Contact *//* Page Contact *//* Page Contact */
+
+/* Section Contact */
+.section-contact{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+
+    align-items: center;
+    min-height: 50vh;
+}
+
+.section-contact div{
+    width: 50%;
+}
+
+/* Formulaire de contact */
+.section-contact form{
+    display: flex;
+    flex-direction: column;
+    font-family: "Neuton", serif;
+
+    width: 40%;
+    height: 350px;
+    padding: 2rem;
+
+    background-color: rgba(124, 124, 124, 0.1);
+    border-radius: 10px;
+}
+
+/* Forme Zone de texte + Bouton */
+.section-contact form input{
+    width: 200px;
+    border-radius: 4px;
+    padding: 0.5rem 4rem 0.5rem 5px;
+    border: solid 1px;
+}
+
+.section-contact form textarea{
+    height: 200px;
+    margin-bottom: 20px;
+    font-family: "Neuton", serif;
+    padding: 5px;
+}
+
+/* Bouton */
+.section-contact .btn{
+    padding: 7px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.section-contact .btn:hover{
+    background-color: #F5CB5C;
+}
+
+/* Flex Nom / Prénom */
+form .align-top{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+}
+
+
+
+
+

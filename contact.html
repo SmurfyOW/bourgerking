@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <!-- Optimisation -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titre -->
+    <title>Page Contact - Bourger King</title>
+    <meta name="author" content="WYSOCKI Florian">
+    <meta name="description" content="Page Contact du site Bourger King">
+
+    <!-- Font Awesome -->
+     <script src="https://kit.fontawesome.com/5df839193a.js" crossorigin="anonymous"></script>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Link JS -->
+    <script src="script.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/illustration-logo-burger.png">
+</head>
+<body>
+    <header>
+        <img src="img/illustration-logo-burger.png" alt="Logo Illustratif de Bourger King">
+
+        <nav>
+            <a href="index.html" title="Bouton vers la page d'accueil">Accueil</a>
+            <a href="services.html" title="Bouton vers la page Nos Services">Nos Services</a>
+            <a href="réalisations.html" title="Bouton vers la page Réalisations">Réalisations</a>
+            <a href="about.html" title="Bouton vers la page à propos">À Propos</a>
+            <a href="contact.html" title="Bouton vers la page Contact" class="actif">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-contact">
+            <div>
+                <h1>Contactez-nous !</h1>
+                <p>Une question, une envie, une remarque (ou juste un petit mot doux) ? On est là pour vous ! Que ce soit pour un retour sur votre dernière commande, une info sur nos restaurants, ou même une candidature spontanée, n’hésitez pas à nous écrire. <br><br>
+                    
+                On vous répond aussi vite qu’un burger chaud sort des cuisines.</p>
+            </div>
+            <form>
+                <div class="align-top">
+                    
+                    <div>
+                        <label for="nom">Nom</label>
+                        <input type="text" placeholder="Votre nom">
+                    </div>
+                    
+                    <div>
+                        <label for="nom">Prénom</label>
+                        <input type="text" placeholder="Votre Prénom">
+                    </div>
+                </div>
+                
+                <label for="Sujet">Objet du message</label>
+                <input type="text" placeholder="Ex. Candidature">
+                
+                <label for="Message">Message</label>
+                <textarea placeholder="Saisissez votre message.."></textarea>
+                
+                <input type="submit" value="Envoyez votre message" class="btn">
+            </form>
+        </section>
+
+            
+        <section class="section-mobile-recrutement">
+            <div class="container">
+                <div>
+                    <h1>Notre application mobile</h1>
+                    <h3>Disponible sur Appstore et Playstore</h3>
+                </div>
+
+                <p>Téléchargez l’application Bourger King et profitez d’une expérience simplifiée : commandez vos menus en quelques clics, accédez à des offres exclusives, suivez vos points de fidélité et localisez le restaurant le plus proche de chez vous. Rapide, pratique et toujours à portée de main !</p>
+            </div>
+        </section>
+
+        <section class="section-localisation">
+            <h1 class="text-center">Localisation</h1>
+
+            <div id="map-display">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.9455995342173!2d2.775482376827994!3d50.42348518930475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dd3a721fbbd5b3%3A0xaebe23f0ddebcd90!2sBurger%20King!5e0!3m2!1sfr!2sfr!4v1747054452977!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="map-container">
+                <button onclick="changeLocation('Liévin')">Liévin</button>
+                <button onclick="changeLocation('Noeux-les-mines')">Noeux-les-mines</button>
+                <button onclick="changeLocation('Béthune')">Béthune</button>
+            </div>
+              
+        </section>
+    </main>
+
+    <footer>
+        <div class="container-gauche">
+
+            <nav>
+                <div>
+                    <a href="" title="Bouton vers la page d'accueil">Accueil</a>
+                    <a href="services.html" title="Bouton vers la page Nos Services">Nos Services</a>
+                    <a href="réalisations.html" title="Bouton vers la page Réalisations">Réalisations</a>
+                    <a href="about.html" title="Bouton vers la page à propos">À Propos</a>
+                    <a href="contact.html" title="Bouton vers la page Contact">Contact</a>
+                </div>
+                <div>
+                    <a href="contact.html" title="Bouton vers la page Contact">CGU</a>
+                    <a href="contact.html" title="Bouton vers la page Contact">Mentions Légales</a>
+                    <a href="contact.html" title="Bouton vers la page Contact">Conditions d'utilisation</a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container-centre">
+            <img src="img/illustration-logo-burger.png" alt="Logo du burger">
+            <b>Copyright 2025 | WYSOCKI Florian</b>
+        </div>
+
+        <div class="container-droite">
+            <div class="newsletter">
+                <h2>Inscrivez-vous à notre Newsletter</h2>
+                <div>
+                    <input type="text" placeholder="email@gmail.com">
+                    <input type="button" class="btn" value="✔">
+                </div>
+            </div>
+
+            <div class="réseaux">
+                <h2>Suivez-nous sur les réseaux !</h2>
+                <div>
+                    <i href="https://www.facebook.com/burgerkingfranceofficiel/?locale=fr_FR" class="fa-brands fa-facebook"></i>
+                    <i href="https://www.instagram.com/burgerkingfr/" class="fa-brands fa-instagram"></i>
+                    <i href="https://x.com/BurgerKingFR" class="fa-brands fa-square-x-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
