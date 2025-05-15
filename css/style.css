@@ -705,7 +705,7 @@ footer .container-droite .réseaux div{
     margin: 0 auto;
 
     align-items: center;
-    min-height: 50vh;
+    min-height: 70vh;
 }
 
 .section-contact div{
@@ -716,13 +716,14 @@ footer .container-droite .réseaux div{
 .section-contact form{
     display: flex;
     flex-direction: column;
-    font-family: "Neuton", serif;
+    justify-content: space-around;
+    font-family: "Coustard", serif;
 
     width: 40%;
-    height: 350px;
+    height: 550px;
     padding: 2rem;
 
-    background-color: rgba(124, 124, 124, 0.1);
+    background-color: rgba(124, 124, 124, 0.03);
     border-radius: 10px;
 }
 
@@ -731,25 +732,30 @@ footer .container-droite .réseaux div{
     width: 200px;
     border-radius: 4px;
     padding: 0.5rem 4rem 0.5rem 5px;
-    border: solid 1px;
+    border: none;
 }
 
 .section-contact form textarea{
     height: 200px;
     margin-bottom: 20px;
-    font-family: "Neuton", serif;
+    font-family: "Coustard", serif;
     padding: 5px;
+    border: none;
+
+    border-radius: 10px;
 }
 
 /* Bouton */
 .section-contact .btn{
     padding: 7px;
-    background-color: white;
-    transition: 0.3s;
+    background-color: #F5CB5C;
+    transition: 0.4s;
+    
 }
 
 .section-contact .btn:hover{
-    background-color: #F5CB5C;
+    background-color: white;
+    border: solid 1px;
 }
 
 /* Flex Nom / Prénom */
@@ -757,6 +763,19 @@ form .align-top{
     display: flex;
     justify-content: space-between;
     width: 85%;
+}
+
+form .message{
+    flex-direction: column;
+    display: flex;
+}
+
+
+
+@media only screen and (min-width: 2000px) {
+    html, body{
+        font-size: 24px;
+    }
 }
 
 
