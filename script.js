@@ -20,3 +20,46 @@ function changeLocation(city) {
     document.getElementById('map-display').innerHTML = mapIframe;
   }
   
+
+
+
+  // Menu Burger
+  document.addEventListener('DOMContentLoaded', function () {
+    const burgerMenu = document.querySelector('.menuBurger');
+    const navLinks = document.querySelector('ul');
+    const arrow = document.querySelector('.arrowIcon');
+    const links = navLinks.querySelectorAll('a'); // Sélectionne tous les liens dans le menu
+
+    // Fonction pour fermer le menu burger
+    function closeMenu() {
+        burgerMenu.classList.remove('active');
+        navLinks.classList.remove('active');
+    }
+
+    // Fonction pour vérifier si l'on est sur la page 'apropos.html'
+    function isOnAproposPage() {
+        return window.location.pathname.includes('apropos.html');
+    }
+
+    // Gestion du clic sur le menu burger
+    burgerMenu.addEventListener("click", function () {
+        this.classList.toggle("active");
+        navLinks.classList.toggle("active");
+    });
+
+    // Gestion du clic sur la flèche
+    arrow.addEventListener('click', () => {
+        burgerMenu.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+
+    // Gestion du clic sur les liens du menu, uniquement sur 'apropos.html'
+    if (isOnAproposPage()) {
+        links.forEach(function(link) {
+            link.addEventListener('click', function() {
+                closeMenu(); // Ferme le menu burger lorsque l'un des liens est cliqué
+            });
+        });
+    }
+    
+});

@@ -37,7 +37,7 @@ section a{
     padding: 0.5rem 1rem;
     background-color: #F5CB5C;
     border-radius: 10px;
-    width: 20%;
+    width: 30%;
 
     text-align: center;
     text-decoration: none;
@@ -70,6 +70,10 @@ section{
 /* Page Accueil *//* Page Accueil *//* Page Accueil */
 /* Page Accueil *//* Page Accueil *//* Page Accueil */
 
+
+
+
+
 /* HEADER */
 /* HEADER */
 /* HEADER */
@@ -78,7 +82,7 @@ header{
     background-color: #F5CB5C;
     grid-column: 1;
     grid-row: 1/2;
-
+    
     display: flex;
     justify-content: space-between;
     padding: 0 3rem;
@@ -89,24 +93,7 @@ header{
 header nav{
     display: flex;
     justify-content: space-between;
-    width: 35%;
     align-items: center;
-}
-
-/* Boutons */
-header nav a{
-    color: #242423;
-    text-decoration: none;
-    font-size: 18px;
-    transition: 0.3s;
-
-    background-color: transparent;
-    padding: 0.5rem 1rem;
-}
-
-/* Hover */
-header nav a:hover{
-    transform: scale(1.125);
 }
 
 /* Couleur Section Active */
@@ -125,7 +112,7 @@ header nav a:hover{
 main{
     grid-column: 1;
     grid-row: 2/3;
-
+    
 }
 
 
@@ -136,14 +123,16 @@ main{
 /* Section Intro */
 .section-intro{  
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
+    width: 80%;
 }
 
 /* Container Intro */
 .section-intro .container{
     width: 40%;
-
+    
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -151,7 +140,7 @@ main{
 
 /* H1 */
 .section-intro .container h1{
-    width: 48%;
+    width: 70%;
     margin-bottom: 10px;
 }
 
@@ -163,16 +152,6 @@ main{
 /* Image */
 .section-intro img{
     width: 50%;
-    position: absolute;
-    z-index: 1;
-    right: 200px;
-}
-
-.section-intro figure{
-    background-color: #dda610;
-    width: 400px;
-    height: 450px;
-    position: relative;
 }
 
 
@@ -274,7 +253,7 @@ main{
     background-image: url(../img/253215.jpg);
     background-size: cover;
     min-height: 40vh;
-
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -288,7 +267,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-content: center;
-
+    
     
     grid-column: 1/2;
 }
@@ -347,7 +326,7 @@ main{
 footer{
     grid-column: 1;
     grid-row: 3/4;
-
+    
     background-color: #333533;
     align-content: center;
     align-items: center;
@@ -374,10 +353,10 @@ footer nav a:hover{
 
 footer nav{
     display: grid;
-
+    
     grid-template-columns: 1fr 1fr;
     grid-column: 1/2;
-
+    
     flex-direction: column;
 }
 
@@ -502,7 +481,7 @@ footer .container-droite .réseaux div{
 
 .section-services .regroup-3{
     grid-row: 3/4;
-
+    
 }
 
 
@@ -673,7 +652,7 @@ footer .container-droite .réseaux div{
 .section-textuel .btn{
     display: flex;
     flex-direction: column;
-
+    
     align-items: center;
     margin-top: 30px;
     color: #E8EDDF;
@@ -703,7 +682,7 @@ footer .container-droite .réseaux div{
     justify-content: space-between;
     width: 80%;
     margin: 0 auto;
-
+    
     align-items: center;
     min-height: 70vh;
 }
@@ -718,11 +697,11 @@ footer .container-droite .réseaux div{
     flex-direction: column;
     justify-content: space-around;
     font-family: "Coustard", serif;
-
+    
     width: 40%;
     height: 550px;
     padding: 2rem;
-
+    
     background-color: rgba(124, 124, 124, 0.03);
     border-radius: 10px;
 }
@@ -741,7 +720,7 @@ footer .container-droite .réseaux div{
     font-family: "Coustard", serif;
     padding: 5px;
     border: none;
-
+    
     border-radius: 10px;
 }
 
@@ -772,6 +751,104 @@ form .message{
 
 
 
+/* OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+/* OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+/* OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+/* OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+/* OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+/* OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+ul.active li {
+    -webkit-list-style: none;
+    list-style: none;
+}
+
+/* MENU BURGER */
+
+/* Emplacement Menu Burger */
+nav .menuBurger {
+    cursor: pointer;
+}
+
+
+/* Ligne Menu Burger */
+nav .menuBurger .burgerIcon {
+    display: flex;
+    flex-direction: column;
+}
+
+nav .menuBurger .line {
+    width: 30px;
+    height: 3px;
+    background-color: #8F8F8F;
+    margin: 4px 0;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+/* Flèche Menu Burger à propos */
+header.bio nav ul .arrowIcon {
+    font-size: 30px;
+    color: #8F8F8F;
+    position: absolute;
+    top: 64px;
+    right: 25px;
+    transform: translateY(-50%);
+    z-index: 101;
+}
+
+
+
+nav ul .arrowIcon {
+    font-size: 30px;
+    color: #8F8F8F;
+    position: absolute;
+    top: 60px;
+    right: 24px;
+    transform: translateY(-50%);
+    z-index: 101;
+}
+
+
+nav .menuBurger.active .arrowIcon {
+    display: block;
+    position: fixed;
+}
+
+
+/* NavBar dans le Menu */
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    opacity: 1;
+    color: #8F8F8F;
+    z-index: 100;
+    transition: ease .6s all;
+    justify-content: space-evenly;
+}
+
+
+/* Ul + Li NavBar */
+header nav ul.active {
+    height: 100vh;
+    opacity: 1;
+    left: 0;
+    background-color: #c7a7a7;
+}
+
+
+
+
+
+
 @media only screen and (min-width: 2000px) {
     html, body{
         font-size: 24px;
@@ -779,6 +856,86 @@ form .message{
 }
 
 
+@media screen and (min-width: 769px) {
+
+    /* Menu Burger */
+    .menuBurger{
+        display: none;
+    }
+
+    nav ul li.réseaux{
+        display: none;
+    }
+
+    nav ul .arrowIcon{
+        display: none;
+    }
+    
+    
+    
+    /* NavBar */
+    
+    header nav{
+        justify-content: space-between;
+        /* width: 100%; */
+    }
+
+    header nav ul{
+        display: flex;
+        /* left: 308px; */
+        height: 120px;
+        /* width: 60%; */
+        list-style-type: none;
+        flex-direction: row;
+        align-items: center;
+        position: static;
+    }
+ 
+}
+
+@media screen and (max-width: 430px){
+    section, header, main, footer{
+        max-width: 60vh;
+    }
+
+    /* Page Accueil > Section Intro */
+    .section-intro{
+        flex-direction: column;
+        align-items: normal;
+        padding: 2rem;
+        width: 100vh;
+    }
+
+
+    /* Section Intro > H1 */
+    .section-intro .container h1{
+        width: 100%;
+    }
+
+    /* Section Intro > Bouton */
+    .section-intro a{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    /* Section Intro > Image */
 
 
 
+    header{
+        width: 100%;
+    }
+
+
+
+
+
+    .section-histoire{
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .section-histoire img{
+        width: 10%;
+    }
+}
