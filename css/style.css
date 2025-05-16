@@ -235,8 +235,8 @@ main{
 
 /* Image */
 .section-histoire img{
-    width:700px;
-    height: 400px;
+    width: 80vw;
+    height: 40vh;
 }
 
 /* Paragraphe */
@@ -895,7 +895,7 @@ header nav ul.active {
 
 @media screen and (max-width: 430px){
     section, header, main, footer{
-        max-width: 60vh;
+        min-width: 100vw;
     }
 
     /* Page Accueil > Section Intro */
@@ -903,7 +903,7 @@ header nav ul.active {
         flex-direction: column;
         align-items: normal;
         padding: 2rem;
-        width: 100vh;
+        width: 100vw;
     }
 
 
@@ -922,20 +922,23 @@ header nav ul.active {
 
 
 
-    header{
-        width: 100%;
-    }
 
-
-
-
-
+    /* Section Histoire */
     .section-histoire{
         flex-direction: column;
         align-items: normal;
     }
 
+    /* Section Histoire > Img */
     .section-histoire img{
+        width: 10%;
+    }
+
+
+    /* Footer */
+
+    /* Footer > Input Newsletter */
+    footer input{
         width: 10%;
     }
 }
