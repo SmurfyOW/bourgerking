@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&family=Fjord+One&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
 
-*{
+
+    
+    *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -9,11 +11,11 @@
 
 body{
     font-family: "Fjord One", serif;
-
+    
     display: grid;
     min-height: 100%;
     gap: 0;
-
+    
     grid-template-columns: 1fr;
     grid-template-rows: 10vh 95% 20vh;
 }
@@ -38,12 +40,12 @@ section a{
     background-color: #F5CB5C;
     border-radius: 10px;
     width: 30%;
-
+    
     text-align: center;
     text-decoration: none;
     color: #242423;
     transition: 0.3s;
-
+    
     border: solid transparent 1px;
 }
 
@@ -70,7 +72,18 @@ section{
 /* Page Accueil *//* Page Accueil *//* Page Accueil */
 /* Page Accueil *//* Page Accueil *//* Page Accueil */
 
-
+/* Menu Burger */
+    .menuBurger{
+        display: none;
+    }
+    
+    nav ul li.réseaux{
+        display: none;
+    }
+    
+    nav ul .arrowIcon{
+        display: none;
+    }
 
 
 
@@ -94,6 +107,31 @@ header nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 35%;
+}
+
+/* Ecartement Navbar */
+header nav ul{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+
+/* Bouton Navbar */
+header nav ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+/* Hover Navbar */
+header nav ul li{
+    transition: all ease 0.3s;
+    list-style: none;
+}
+
+header nav ul li:hover{
+    transform: scale(1.125);
 }
 
 /* Couleur Section Active */
@@ -102,6 +140,60 @@ header nav{
     padding: 0.5rem 1rem;
     border-radius: 10px;
 }
+
+ul.active li {
+    -webkit-list-style: none;
+    list-style: none;
+}
+
+/* MENU BURGER */
+
+/* Emplacement Menu Burger */
+nav .menuBurger {
+    cursor: pointer;
+}
+
+/* Ligne Menu Burger */
+nav .menuBurger .burgerIcon {
+    display: flex;
+    flex-direction: column;
+}
+
+nav .menuBurger .line {
+    width: 30px;
+    height: 3px;
+    background-color: #8F8F8F;
+    margin: 4px 0;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+
+nav ul .arrowIcon {
+    font-size: 30px;
+    color: #8F8F8F;
+    position: absolute;
+    top: 60px;
+    right: 24px;
+    transform: translateY(-50%);
+    z-index: 101;
+}
+
+
+nav .menuBurger.active .arrowIcon {
+    display: block;
+    position: fixed;
+}
+
+
+
+
+
+
 
 
 
@@ -151,7 +243,7 @@ main{
 
 /* Image */
 .section-intro img{
-    width: 50%;
+    width: 35%;
 }
 
 
@@ -262,7 +354,7 @@ main{
 .section-mobile-recrutement .container{
     width: 70%;
     margin: 0 auto;
-
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -274,6 +366,7 @@ main{
 
 .section-mobile-recrutement .container div{
     margin-bottom: 20px;
+
 }
 
 
@@ -335,6 +428,7 @@ footer{
     width: 100%;
     color: #E8EDDF;
     padding: 0 2rem;
+    height: 30vh;
 }
 
 
@@ -381,7 +475,7 @@ footer .container-droite{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    height: 80%;
+    /* height: 100%; */
 }
 
 footer .container-droite h2{
@@ -400,11 +494,14 @@ footer .container-droite .newsletter{
 }
 
 footer .container-droite .newsletter input{
-    padding: 0.5rem 2rem 0.5rem 5px;
+    padding: 0.8rem 4rem 0.8rem 5px;
+    background-color: #E8EDDF;
+    border-radius: 10px;
+    border: none;
 }
 
 footer .container-droite .newsletter input.btn{
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 1rem;
     transition: 0.5s;
 }
 
@@ -444,6 +541,8 @@ footer .container-droite .réseaux div{
     min-height: 60vh;
     display: grid;
     grid-template-columns: 40% 30%;
+    width: 100%;
+    padding: 0 6rem;
 }
 
 .intro-service .container{
@@ -734,6 +833,7 @@ footer .container-droite .réseaux div{
 
 .section-contact .btn:hover{
     background-color: white;
+    
     border: solid 1px;
 }
 
@@ -750,99 +850,13 @@ form .message{
 }
 
 
-
 /* OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
 /* OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
 /* OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
 /* OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
 /* OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
 /* OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
-ul.active li {
-    -webkit-list-style: none;
-    list-style: none;
-}
 
-/* MENU BURGER */
-
-/* Emplacement Menu Burger */
-nav .menuBurger {
-    cursor: pointer;
-}
-
-
-/* Ligne Menu Burger */
-nav .menuBurger .burgerIcon {
-    display: flex;
-    flex-direction: column;
-}
-
-nav .menuBurger .line {
-    width: 30px;
-    height: 3px;
-    background-color: #8F8F8F;
-    margin: 4px 0;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-}
-
-
-
-
-
-/* Flèche Menu Burger à propos */
-header.bio nav ul .arrowIcon {
-    font-size: 30px;
-    color: #8F8F8F;
-    position: absolute;
-    top: 64px;
-    right: 25px;
-    transform: translateY(-50%);
-    z-index: 101;
-}
-
-
-
-nav ul .arrowIcon {
-    font-size: 30px;
-    color: #8F8F8F;
-    position: absolute;
-    top: 60px;
-    right: 24px;
-    transform: translateY(-50%);
-    z-index: 101;
-}
-
-
-nav .menuBurger.active .arrowIcon {
-    display: block;
-    position: fixed;
-}
-
-
-/* NavBar dans le Menu */
-header nav ul {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    opacity: 1;
-    color: #8F8F8F;
-    z-index: 100;
-    transition: ease .6s all;
-    justify-content: space-evenly;
-}
-
-
-/* Ul + Li NavBar */
-header nav ul.active {
-    height: 100vh;
-    opacity: 1;
-    left: 0;
-    background-color: #c7a7a7;
-}
 
 
 
@@ -855,47 +869,375 @@ header nav ul.active {
     }
 }
 
+@media screen and (max-width: 1440px){
 
-@media screen and (min-width: 769px) {
+        /* Page Service */    /* Page Service */    /* Page Service */
+    /* Page Service */    /* Page Service */    /* Page Service */
+    /* Page Service */    /* Page Service */    /* Page Service */
+    /* Page Service */    /* Page Service */    /* Page Service */
 
-    /* Menu Burger */
-    .menuBurger{
-        display: none;
-    }
-
-    nav ul li.réseaux{
-        display: none;
-    }
-
-    nav ul .arrowIcon{
-        display: none;
-    }
-    
-    
-    
-    /* NavBar */
-    
+    /* Header nav */
     header nav{
+        width: 60%;
+    }
+
+
+    /* Section Services > h1 */
+    .section-services h1{
+        width: 100%;
+    }
+
+    .intro-service{
+        width: 100%;
+        display: flex;
+    }
+
+    /* Section Services > Regroupement*/
+    .section-services .same-regroup{
+        flex-direction: row;
+        display: flex;
         justify-content: space-between;
-        /* width: 100%; */
+        text-align: left;
+        height: 60%;
+        width: 90%;
+    }
+    
+    /* Section Services > Regroupement Div  */
+    .section-services .same-regroup div{
+        width: 100%;
+    }
+
+    /* Section Services > div P */
+    .section-services p{
+        margin-bottom: 20px;
+    }
+
+    /* Section Service > Img */
+    .section-services img{
+        width: 50%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    /* Section Service > Bouton */
+    .section-services a{
+        margin: 30px 0;
+        width: 50%;
+    }
+
+
+    /* Section Mobile - Recrutement */
+    .section-mobile-recrutement{
+        min-height: 60vh;
+    }
+
+    /* Section Localisation */
+
+    .section-localisation{
+        flex-direction: column;
+        margin-bottom: 200px;
+    }
+
+    
+}
+
+
+
+@media screen and (max-width: 1024px){
+    header nav{
+        width: 65%;
+        justify-content: space-between;
     }
 
     header nav ul{
+        width: 100%;
+    }
+
+
+    /* Header nav */
+    header nav{
+        justify-content: space-between;
+        width: 70%;
+    }
+
+    /* Header nav > ul */
+    header nav ul{
         display: flex;
-        /* left: 308px; */
-        height: 120px;
-        /* width: 60%; */
         list-style-type: none;
         flex-direction: row;
         align-items: center;
         position: static;
     }
+
+    /* Section Intro */
+    .section-intro{
+        width: 100%;
+        padding: 0 3rem;
+    }
+
+    /* Section Intro > Container */
+    .section-intro .container{
+        width: 50%;
+    }
+
+    /* Section Intro > Img */
+    .section-intro img{
+        width: 40%;
+    }
+
+    /* Section Intro > bouton */
+    .section-intro a{
+        width: 50%;
+    }
+
+    /* Section Burgers */
+    /* Section Burgers > Container */
+    .section-burgers .align .container{
+        /* height: 60vh; */
+        width: 30%;
+    }
+
+    /* Section Burgers > Img */
+    .section-burgers .align .container img{
+        width: 100%;
+    }
+
+    /* Section Burgers > Bouton */
+    .section-burgers a{
+        width: 25%;
+    }
+
+
+    /* Section Histoire */
+    .section-histoire{
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    /* Section Histoire > Bouton */
+    .section-histoire a{
+        margin: 2vh 0;
+    }
+
+
+    /* Section Mobile - Recrutement */
+    .section-mobile-recrutement{
+        padding: 0 3rem;
+    }
+
+    /* Section Mobile - Recrutement > Container */
+    .section-mobile-recrutement .container{
+        width: 100%;
+    }
+
+    /* Section Histoire > Img */
+    .section-histoire img{
+        height: auto;
+    }
+
+
+    /* Section Localisation */
+
+    /* Section Localisation > Container Bouton */
+    .section-localisation .map-container{
+        flex-direction: column;
+        margin-bottom: 100px;
+        align-items: center;
+    }
+
+    /* Section Localisation > Bouton */
+    .section-localisation button{
+        width: 50%;
+    }
  
+        /* Footer */
+    footer{
+        height: 40vh;
+        /* display: flex; */
+        text-align: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    /* Footer > Copyright + Logo */
+    footer .container-centre{
+        order: 0;
+    }
+
+    /* Footer > Espacement Bouton */
+    footer nav div a{
+        margin-bottom: 15px;
+    }
+
+    /* Footer > Container Droite */
+    footer .container-droite{
+        width: 50%;
+    }
+
+    /* Footer > Newsletter Container */
+    footer .container-droite .newsletter{
+        justify-content: center;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    
+    /* Footer > Input Newsletter */
+    footer .container-droite .newsletter input {
+        margin-top: 10px;
+    }
+
+    /* Footer > Réseaux Container Logo */
+    footer .container-droite .réseaux div{
+        margin: 0 auto;
+    }
+
+    /* Footer > Réseaux H2 */
+    footer .container-droite .réseaux h2{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+        /* Page Service */    /* Page Service */    /* Page Service */
+    /* Page Service */    /* Page Service */    /* Page Service */
+    /* Page Service */    /* Page Service */    /* Page Service */
+    /* Page Service */    /* Page Service */    /* Page Service */
+
+    /* Section Services */
+    .section-services{
+        height: 55%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Section Services > h1 */
+    .section-services h1{
+        width: 100%;
+    }
+
+    .intro-service{
+        width: 100%;
+        display: flex;
+    }
+
+    /* Section Services > Regroupement*/
+    .section-services .same-regroup{
+        flex-direction: column;
+        text-align: left;
+        justify-content: space-around;
+    }
+    
+    /* Section Services > Regroupement Div  */
+    .section-services .same-regroup div{
+        width: 100%;
+    }
+
+    /* Section Service > Img */
+    .section-services img{
+        width: 100%;
+        height: 80%;
+        margin: 30px 0;
+    }
+
+    /* Section Service > Bouton */
+    .section-services a{
+        margin: 30px 0;
+        width: 50%;
+    }
+
+
+    /* Section Mobile - Recrutement */
+    .section-mobile-recrutement{
+        min-height: 60vh;
+    }
+
+            /* section Réalisation > Nav */
+    .section-réalisation nav{
+        width: 80%;
+    }
+
+    /* Section réalisation > Container */
+    .section-réalisation .align .container{
+        width: 60%;
+        margin: 20px;
+    }
+
+
 }
 
-@media screen and (max-width: 430px){
+
+
+@media screen and (max-width: 768px){
     section, header, main, footer{
         min-width: 100vw;
+    }
+
+
+
+    /* Menu Burger */
+    .menuBurger{
+        display: flex;
+    }
+    
+    nav ul li.réseaux{
+        display: flex;
+    }
+    
+    nav ul .arrowIcon{
+        display: flex;
+    }
+    
+    /* Page Accueil */  /* Page Accueil */  /* Page Accueil */
+    /* Page Accueil */  /* Page Accueil */  /* Page Accueil */
+    /* Page Accueil */  /* Page Accueil */  /* Page Accueil */
+    /* Page Accueil */  /* Page Accueil */  /* Page Accueil */
+
+    /* Header */
+    header{
+        padding: 0 1rem;
+    }
+    
+    header nav{
+        width: 10%;
+    }
+
+    header nav ul.active{
+        height: 40%;
+        width: 50%;   
+    }
+
+    /* Design menu burger */
+    header nav ul.active {
+    height: 100vh;
+    opacity: 1;
+    right: 0;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+    /* NavBar dans le Menu */
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        opacity: 1;
+        color: #8F8F8F;
+        z-index: 100;
+        transition: 0.25s;
+        justify-content: start;
+        /* gap: 5%; */
+    }
+
+    header nav ul li{
+        list-style: none;
+        text-align: center;
+        margin-top: 10vh;
     }
 
     /* Page Accueil > Section Intro */
@@ -906,39 +1248,343 @@ header nav ul.active {
         width: 100vw;
     }
 
-
-    /* Section Intro > H1 */
-    .section-intro .container h1{
+    /* Section Intro > Container textuel */
+    .section-intro .container{
         width: 100%;
     }
 
+    
     /* Section Intro > Bouton */
     .section-intro a{
-        width: 50%;
-        margin: 0 auto;
+        width: 25%;
+        margin-bottom: 20px;
     }
 
-    /* Section Intro > Image */
+    /* Section Intro > Img */
+    .section-intro img{
+        width: 70%;
+        margin: 0 auto;
+    }
+    
 
+    
+    /* Section Burgers */
 
+    /* Section Burgers > Alignement */
+    .section-burgers .align{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    /* Section Burgers > Container */
+    .section-burgers .align .container{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    /* Section Burgers > Bouton */
+    .section-burgers a{
+        width: 25%;
+    }
 
 
     /* Section Histoire */
     .section-histoire{
         flex-direction: column;
         align-items: normal;
+        justify-content: space-between;
+        padding: 2rem;
+        width: 100vw;
+    }
+
+    /* Section Histoire > Container Textuel */
+    .section-histoire div{
+        width: 100%;
+        height: 50%;
+    }
+
+    /* Section Histoire > Container p */
+    .section-histoire div p{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Section Histoire > Bouton */
+    .section-histoire a{
+        width: 35%;
     }
 
     /* Section Histoire > Img */
     .section-histoire img{
-        width: 10%;
+        width: 90vw;
+        margin: 0 auto;
+        height: 35%;
     }
 
 
-    /* Footer */
+    /* Section Mobile - Recrutement */
+    .section-mobile-recrutement{
+        display: flex;
+        padding: 0rem 2rem;
+    }
 
+    /* Section Mobile - Recrutement > Container */
+    .section-mobile-recrutement .container{
+        width: 100%;
+    }
+
+    /* Section Mobile - Recrutement > P */
+    .section-mobile-recrutement .container p{
+        width: 70%;
+    }
+
+
+    
+    /* Section Localisation */
+    .section-localisation{
+        min-height: 100vh;
+        padding: 5rem 0 10rem;
+    }
+
+    /* Section Localisation > Container Bouton */
+    .section-localisation .map-container{
+        flex-direction: column;
+        margin-bottom: 100px;
+        align-items: center;
+    }
+
+    /* Section Localisation > Bouton */
+    .section-localisation button{
+        width: 50%;
+    }
+
+    /* Footer */
+    footer{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 90vh;
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    /* Footer > Copyright + Logo */
+    footer .container-centre{
+        order: 1;
+    }
+
+    /* Footer > Espacement Bouton */
+    footer nav div a{
+        margin-bottom: 15px;
+    }
+
+    /* Footer > Container Droite */
+    footer .container-droite{
+        height: 30%;
+    }
+
+    /* Footer > Newsletter Container */
+    footer .container-droite .newsletter{
+        justify-content: center;
+        height: 20vh;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    
     /* Footer > Input Newsletter */
+    footer .container-droite .newsletter input {
+        margin-top: 10px;
+    }
+
+    /* Footer > Réseaux Container Logo */
+    footer .container-droite .réseaux div{
+        margin: 0 auto;
+    }
+
+    /* Footer > Réseaux H2 */
+    footer .container-droite .réseaux h2{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+
+
+    /* Page Service */    /* Page Service */    /* Page Service */
+    /* Page Service */    /* Page Service */    /* Page Service */
+    /* Page Service */    /* Page Service */    /* Page Service */
+    /* Page Service */    /* Page Service */    /* Page Service */
+
+    /* Section Services */
+    .section-services{
+        height: 55%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Section Services > h1 */
+    .section-services h1{
+        width: 100%;
+    }
+
+    .intro-service{
+        width: 100%;
+        display: flex;
+    }
+
+    /* Section Services > Regroupement*/
+    .section-services .same-regroup{
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    /* Section Services > Regroupement Div  */
+    .section-services .same-regroup div{
+        width: 100%;
+    }
+
+    /* Section Service > Img */
+    .section-services img{
+        width: 100%;
+        height: 50%;
+        margin: 30px 0;
+    }
+
+    /* Section Service > Bouton */
+    .section-services a{
+        margin: 30px 0;
+        width: 50%;
+    }
+
+
+    /* Section Mobile - Recrutement */
+    .section-mobile-recrutement{
+        min-height: 60vh;
+    }
+
+        /* section Réalisation > Nav */
+    .section-réalisation nav{
+        width: 80%;
+    }
+
+    /* Section Réalisation > Align */
+    .section-réalisation .align{
+        flex-direction: column;
+        margin-bottom: 30px;
+
+        align-items: center;
+    }
+
+    /* Section réalisation > Container */
+    .section-réalisation .align .container{
+        width: 60%;
+        margin-bottom: 30px;
+    }
+
+
+    /* Section Localisation */
+    .section-localisation{
+        margin-bottom: 300px;
+    }
+
+
+    /* Page Contact */    /* Page Contact */    /* Page Contact */
+    /* Page Contact */    /* Page Contact */    /* Page Contact */
+    /* Page Contact */    /* Page Contact */    /* Page Contact */
+
+    /* section contact */
+    .section-contact{
+        flex-direction: column;
+    }
+
+    .section-contact form{
+        width: 100%;
+    }
+
+    .section-contact form .message textarea style{
+        width: 10vw;
+        height: 100px;
+    }
+}
+
+
+@media screen and (max-width: 450px){
+    /* Section HIstoire */
+    .section-histoire{
+        height: 12%;
+    }
+
+    /* Section réalisation */
+    .section-réalisation{
+        min-height: 100vh;
+    }
+
+    /* section Réalisation > Nav */
+    .section-réalisation nav{
+        width: 80%;
+    }
+
+    /* Section Réalisation > Align */
+    .section-réalisation .align{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    /* Section réalisation > Container */
+    .section-réalisation .align .container{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    footer{
+        min-height: 100%;
+    }
+
+    .section-localisation{
+        margin-bottom: 200px;
+    }
+    
+}
+
+
+@media screen and (max-width: 360px){
+    
+    /* Footer Newsletter input */
     footer input{
-        width: 10%;
+        margin: 0 auto;
+    }
+    
+    
+    /* Section Histoire */
+    .section-histoire{
+        height: 12%;
+    }
+
+    /* Section Histoire > Img */
+    .section-histoire img{
+        height: 20vh;
+    }
+
+    /* Section Histoire > Bouton */
+    .section-histoire a{
+        width: 50%;
+    }
+
+        /* Section Mobile - Recrutement */
+    .section-mobile-recrutement{
+        min-height: 70vh;
+    }
+
+
+    /* Page Services */    /* Page Services */    /* Page Services */
+    /* Page Services */    /* Page Services */    /* Page Services */
+    /* Page Services */    /* Page Services */    /* Page Services */
+    /* Page Services */    /* Page Services */    /* Page Services */
+
+    /* Section Services */
+
+    /* section services > h3 */
+    .section-services h3{
+        font-size: 16px;
     }
 }
